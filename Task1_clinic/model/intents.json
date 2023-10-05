@@ -1,0 +1,129 @@
+{"intents": [
+    {"tag": "greeting",
+      "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up", "Hey", "greetings","Hi, How is it going?"],
+      "responses": ["Hi. How are you feeling today?","Hello!", "Good to see you again!", "Hi there, how can I help?"],
+      "context_set": ""
+    },
+    {"tag": "greetthank",
+      "patterns": ["Thank you","thank you very much","It was really helpful","Thank you for the help"],
+      "responses": ["Welcome","Heartily Welcome"],
+      "context_set": ""
+    },
+    {"tag": "goodbye",
+      "patterns": ["cya", "See you later", "Goodbye","goodbye","good bye", "I am Leaving", "Have a Good day", "bye", "cao", "see ya"],
+      "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
+      "context_set": ""
+    },
+    {"tag": "greet",
+      "patterns": ["How do you do?","It is a pleasure to meet you.","Top of the morning to you!","What's up?"],
+      "responses": ["I'm doing well. How are you feeling today?","How are you feeling today?"],
+      "context_set": ""
+    },
+    {"tag": "age",
+      "patterns": ["how old", "what is your age", "how old are you", "age"],
+      "responses": ["I am 10 days old","I was created in November 2022."],
+      "context_set": ""
+    },
+    {"tag": "name",
+      "patterns": ["what is your name", "what should I call you", "whats your name?", "who are you?","Can ou tell me what is your name"],
+      "responses": ["You can call me Neural.","I'm Neural","I'm Neural the assistant of Avi"],
+      "context_set": ""
+    },
+    {"tag": "contact",
+      "patterns": ["What is your number", "What is your contact number"],
+      "responses": ["You can contact the helpline at +91 9999 11111"],
+      "context_set": ""
+    },
+    {"tag": "interests",
+      "patterns": ["What are your interests", "What is your interest"],
+      "responses": ["I am interested in helping you medically!","I am interested in a wide variety of topics, and read rather a lot."],
+      "context_set": ""
+    },
+    {"tag": "location",
+      "patterns": ["What is your location","Where are you from"],
+      "responses": ["I am offline. So I am present at the same location as you.","I am offline. at VIIT College of Engineering as of now."],
+      "context_set": ""
+    },
+    {"tag": "parent",
+      "patterns": ["Who is your father","Who is your mother"],
+      "responses": ["Healthfreak created me."],
+      "context_set": ""
+    },
+
+    {"tag": "nose",
+      "patterns": ["My nose is choked","My nose is bloked","I am not able to inhale"],
+      "responses": ["Okay, this is a symptom of cold, do you have cold?"],
+      "context_set": ""
+    },
+    {"tag": "cold",
+      "patterns": ["I have a cold","I am suffering from cold","Yes I have a cold","My nose is itching."],
+      "responses": ["You should take a sudafed tablet after your meal."],
+      "context_set": ""
+    },
+    {"tag": "sudafed",
+      "patterns": ["I took the sudafed tablet","Ok, i will take the sudafed tablet"],
+      "responses": ["Good, now take some rest and then let me know if you are feeling better after having sudafed tablet."],
+      "context_set": ""
+    },
+    {"tag": "notbettersud",
+      "patterns": ["I am not feeling better","Not feeling better","I am still not feeling better after having sudafed tablet"],
+      "responses": ["Ok, its not just a normal cold, you should consult a doctor."],
+      "context_set": ""
+    },
+    {"tag": "appointment",
+      "patterns": ["Can you book an appointment for me.","Book an appointment for me."],
+      "responses": ["yes please state time and doctor's name in the following format; 'Patient Name:  Date:  Doctor: Hospital:"],
+      "context_set": ""
+    },
+    {"tag": "cough",
+      "patterns": ["I have a cough","I am suffering from cough","Yes I have a cough","There is a pain in my throat","My throat is itching."],
+      "responses": ["You should take a spoon full of benadryl after your meal."],
+      "context_set": ""
+    },
+    {"tag": "benadryl",
+      "patterns": ["I took the benadryl tablet","Ok, i will take the benadryl tablet"],
+      "responses": ["Good, now take some rest and then let me know if you are feeling better after having benadryl."],
+      "context_set": ""
+    },
+    {"tag": "notbetterben",
+      "patterns": ["I am not feeling better","Not feeling better","I am still not feeling better after having benadryl tablet"],
+      "responses": ["Ok, its not just a normal cough, you should consult a doctor."],
+      "context_set": ""
+    },
+    {"tag": "headache",
+      "patterns": ["I have a headache","I am suffering from headache","Yes I have a headache","There is pain in my head"],
+      "responses": ["what kind of headache do you have : 1. Migrane headache - intense throbbing pain on just one side of the head. 2. Cluster headaches - severe and recurrent headaches 3. Tension Headache - Ocassional;"],
+      "context_set": ""
+    },
+    {"tag": "migrane",
+      "patterns": ["i have a migrane headache","I am suffering from migrain headache","Yes I have a migrain headache"],
+      "responses": ["symptom noted. Migraines tend to be recurrent, and each attack may last up to 3 days. would you like to talk to a doctor?"],
+      "context_set": ""
+    },
+    {"tag": "cluster",
+      "patterns": ["i have a cluster headache","I am suffering from cluster headache","Yes I have a cluster headache"],
+      "responses": ["symptom noted. Attacks tend to occur in daily clusters that can persist for weeks or months. They typically take place at the same time of day, which can often be a couple of hours after falling asleep at night. would you like to talk to a doctor?"],
+      "context_set": ""
+    },
+    {"tag": "tension",
+      "patterns": ["i have a tension headache","I am suffering from tension headache","Yes I have a tension headache"],
+      "responses": ["symptom noted. The cause of tension headaches is unclear, but stress, anxiety, and depression are common triggers. would you like to talk to a doctor?"],
+      "context_set": ""
+    },
+    {"tag": "available",
+      "patterns": ["is a doctor available ?","hi can i see a doctor ?","i want to talk to a doctor",""],
+      "responses": ["sorry, all doctors are occupied at the moment. We will connect you to a doctor soon. Do you want to book an appointment?","all doctors are attending patients. we shall revert to your request soon. Do you want to book an appointment?","you shall be called once the doctor is available. Do you want to book an appointment?"],
+      "context_set": ""
+    },
+    {"tag": "details",
+      "patterns": ["Patient Name Date Time Doctor Hospital"],
+      "responses": ["appointment details saved. you shall be contacted shortly."],
+      "context_set": ""
+    },
+    {"tag": "consult",
+      "patterns": ["yes, i want to talk to doctor","I want to consult a doctor"],
+      "responses": ["Book an appointment.","will you please book an appointment."],
+      "context_set": ""
+    }
+  ]
+}
