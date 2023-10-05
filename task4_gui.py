@@ -134,7 +134,6 @@ button_clear.pack(side=tk.RIGHT)
 def send_message():
     # 获取输入框的内容
     message = entry_input.get()
-    # 如果内容不为空，就在聊天记录中显示，并清空输入框
     if message:
         text_chat.insert(tk.END, "You: " + message + "\n")
         entry_input.delete(0, tk.END)
@@ -142,7 +141,6 @@ def send_message():
 
         messages.append(llama_cpp.ChatCompletionMessage(content=message, role="user"))
         root.update()
-        # 模拟聊天机器人的回复延迟
         role = ""
         reply = ""
         text_chat.insert(tk.END, "LLAMA: ")
