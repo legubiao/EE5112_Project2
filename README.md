@@ -1,2 +1,2 @@
-模型需要放在models文件夹下（如果没有就创建一个）
-模型下载地址：https://huggingface.co/TheBloke/Llama-2-7b-Chat-GGUF, GPT4ALL ui and model: gpt4all.io
+The model needs to be placed in the models folder (if it does not exist, create one). 
+Model download address: https://huggingface.co/TheBloke/Llama-2-7b-Chat-GGUF, GPT4ALL ui and model: gpt4all.io
